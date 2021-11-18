@@ -15,7 +15,7 @@ public class Kata4 {
 
 
     public static void main(String[] args) throws IOException {
-        ArrayList<Mail> listMail = (ArrayList)MailListReader.read("C:\\Users\\Entrar\\Documents\\NetBeansProjects\\Kata4\\email.txt");
+        List<Mail> listMail = MailListReader.read("C:\\Users\\Entrar\\Documents\\NetBeansProjects\\Kata4\\email.txt");
         Histogram histogram = MailHistogramBuilder.build(listMail);
         HistogramDisplay histo = new HistogramDisplay(histogram);
         histo.execute();

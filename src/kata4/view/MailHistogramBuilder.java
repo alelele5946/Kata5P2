@@ -8,10 +8,10 @@ import kata4.model.Mail;
 
 public class MailHistogramBuilder {
     public static Histogram<String> build(List<Mail> listMail){
-        Histogram histogram = new Histogram();
+        Histogram<String> histogram = new Histogram<String>();
         for (Mail mail : listMail) {
-            String email = mail.getDomain();
-            histogram.increment(mail);
+            String domain = mail.getDomain();
+            histogram.increment(domain);
             
             
         }

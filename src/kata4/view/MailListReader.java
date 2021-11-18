@@ -14,7 +14,7 @@ import kata4.model.Mail;
 
 public class MailListReader {
     public static List<Mail> read(String fileName) throws FileNotFoundException, IOException{
-        ArrayList<Mail> mails = new ArrayList();
+        List<Mail> mails = new ArrayList<Mail>();
         
             BufferedReader br = new BufferedReader(new FileReader(new File(fileName)));
            
